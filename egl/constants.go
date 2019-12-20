@@ -1,0 +1,52 @@
+package egl
+
+const (
+	FALSE = 0
+	TRUE  = 1
+)
+const (
+	DONT_CARE = -1
+
+	NO_SURFACE = Surface(0)
+	NO_CONTEXT = Context(0)
+	NO_DISPLAY = Display(0)
+
+	OPENGL_ES2_BIT = 0x04 // EGL_RENDERABLE_TYPE mask
+	WINDOW_BIT     = 0x04 // EGL_SURFACE_TYPE mask
+
+	// BindAPI/QueryAPI targets
+	OPENGL_ES_API = 0x30A0
+
+	RENDERABLE_TYPE = 0x3040
+	SURFACE_TYPE    = 0x3033
+	BUFFER_SIZE     = 0x3020
+	ALPHA_SIZE      = 0x3021
+	BLUE_SIZE       = 0x3022
+	GREEN_SIZE      = 0x3023
+	RED_SIZE        = 0x3024
+	DEPTH_SIZE      = 0x3025
+	STENCIL_SIZE    = 0x3026
+	SAMPLE_BUFFERS  = 0x3032
+	CONFIG_CAVEAT   = 0x3027
+	NONE            = 0x3038
+
+	CONTEXT_CLIENT_VERSION = 0x3098
+)
+
+const (
+	SUCCESS             = 0x3000
+	NOT_INITIALIZED     = 0x3001
+	BAD_ACCESS          = 0x3002
+	BAD_ALLOC           = 0x3003
+	BAD_ATTRIBUTE       = 0x3004
+	BAD_CONFIG          = 0x3005
+	BAD_CONTEXT         = 0x3006
+	BAD_CURRENT_SURFACE = 0x3007
+	BAD_DISPLAY         = 0x3008
+	BAD_MATCH           = 0x3009
+	BAD_NATIVE_PIXMAP   = 0x300A
+	BAD_NATIVE_WINDOW   = 0x300B
+	BAD_PARAMETER       = 0x300C
+	BAD_SURFACE         = 0x300D
+	CONTEXT_LOST        = 0x300E
+)
